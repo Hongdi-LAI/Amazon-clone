@@ -1,24 +1,8 @@
 //Data Layer logic goes here
 
 export const initialState = {
-    basket: [
-                /* down below items are for tesing purposes */
-               /* {
-                    id: "2324",
-                    title: "Classic Glass Tea Cup 16cl (x6)",
-                    price: 6.96,
-                    rating: 5,
-                    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQC4YQHpLsJAU5CJCCZQdm0DK4d29YlyOZaL6x-Kdh1HxQOkqIN9iQ&usqp=CAc",
-                },
-                {
-                    id: "2324",
-                    title: "Classic Glass Tea Cup 16cl (x6)",
-                    price: 6.96,
-                    rating: 5,
-                    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQC4YQHpLsJAU5CJCCZQdm0DK4d29YlyOZaL6x-Kdh1HxQOkqIN9iQ&usqp=CAc",
-                } */
-            ],
-    user: null,
+    basket: [],
+    user: [],
 };
 
 // incrementing all of the prices in the basket
@@ -28,6 +12,12 @@ export const getBasketTotal = (basket) =>
 const reducer = (state,action) => {
     //console.log(action);
     switch(action.type) {
+
+        case 'SET_USER':
+            return {
+                ...state,
+                user: action.user,
+            };
 
         case 'ADD_TO_BASKET':
             // logic for adding items to from basket
