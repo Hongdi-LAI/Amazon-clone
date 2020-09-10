@@ -15,7 +15,7 @@
     object-fit: contain;
     margin: 0 20px;
     margin-top: 18px;
-    
+    cursor: pointer;
 }
 
 .header__searchIcon {
@@ -24,6 +24,7 @@
     /* "!important" ignore material ui css */
     /* apply self-defined height*/
     height: 22px !important;
+    cursor: pointer;
 }
 
 .header__searchInput {
@@ -64,11 +65,13 @@
 .header__link {
     color: white;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .header__optionBasket {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .header__basketCount {

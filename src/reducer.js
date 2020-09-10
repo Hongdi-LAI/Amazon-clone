@@ -2,6 +2,7 @@
 
 export const initialState = {
     basket: [
+                /* down below items are for tesing purposes */
                /* {
                     id: "2324",
                     title: "Classic Glass Tea Cup 16cl (x6)",

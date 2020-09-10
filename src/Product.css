@@ -13,6 +13,11 @@
     z-index: 1;
 }
 
+.product:hover {
+    background-color: lightgray;
+    opacity: 0.9;
+}
+
 .product__rating {
     display: flex;
 }
@@ -38,4 +43,5 @@
     background-color: #f0c14b;
     border: 1px solid;
     border-color: #a88734 #9c7e31 #846a29;
+    cursor: pointer;
 }
