@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react';
 import './App.css';
 import Header from './Header';
+import Bottom from './Bottom';
 import Home from './Home';
 import Checkout from './Checkout';
 import Login from './Login';
@@ -51,6 +52,7 @@ function App() {
           <Route path = "/checkout">
             <Header />
             <Checkout />
+            <Bottom />
           </Route>
           <Route path = "/login">
             <Login />
@@ -59,6 +61,7 @@ function App() {
           <Route path = "/">
             <Header />
             <Home />
+            <Bottom />
           </Route>
         </Switch>
       </div>

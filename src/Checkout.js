@@ -19,11 +19,15 @@ function Checkout() {
                 />
                 {/* condition on shopping basket */}
                 {basket?.length === 0 ? (
-                    <div>
+                    <div className = "checkout__empty">
                         <h2> Your Shopping Basket is Empty</h2>
                         <p>
                             You have no items in your basket. To buy one or more items, click "Add to basket" next to the item.
                         </p>
+                        <img
+                        src = 'https://images-na.ssl-images-amazon.com/images/G/01/dex/2019/CFS/DEX_2019_CFS_LP_Hero_Desktop_3000x650.jpg'
+                        alt = ''
+                        />
                     </div>
                 ) : (
                     <div>
