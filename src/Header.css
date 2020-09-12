@@ -78,3 +78,35 @@
     margin-left: 10px;
     margin-right: 10px;
 }
+
+.nav__second {
+    display: flex;
+    background-color: #212b38;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.nav__secondBarLeft {
+    display: flex;
+    min-width: 200px;
+}
+
+.nav__secondBarLeft > h3 {
+    font-size: medium;
+    padding: 0 3px;
+}
+
+.nav__secondBarMid{
+    font-size: small;
+    display: flex;
+    width:100%;
+    justify-content: space-evenly;
+}
+
+.nav__secondBarRight {
+    min-width: 250px;
+    font-size: small;
+}
