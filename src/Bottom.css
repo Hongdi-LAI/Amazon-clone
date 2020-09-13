@@ -1,15 +1,17 @@
 .bottom__button {
     width: 100%;
-    background-color: rgb(81, 77, 122);
+    background-color: rgb(58, 55, 88);
     color: rgb(231, 230, 230);
     border-color: transparent;
     border-bottom: 1px solid rgb(112, 112, 112);
+    padding: 3px;
+    
 }
 
 .bottom__button:hover {
     cursor: pointer;
-    background-color: rgb(81, 77, 122);
-    opacity: 0.8;
+    background-color: rgb(58, 55, 88);
+    opacity: 0.9;
 }
 
 .bottom__info {
