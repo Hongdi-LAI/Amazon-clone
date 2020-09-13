@@ -6,6 +6,8 @@
     align-items: center;
     padding: 5px 10px;
     cursor: pointer;
+    z-index: 2;
+    position: sticky;
 }
 
 .subheader__left {

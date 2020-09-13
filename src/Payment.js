@@ -89,9 +89,11 @@ function Payment() {
                          <h3>Delivery Address</h3>
                     </div>
                     <div className = "payment__address">
-                        <p> {user?.email}</p>
-                        <p> 73 Rue de Archives </p>
-                        <p> 75003, Paris</p>
+                        <p> {user?.email}, 
+                            73 Rue de Archives, 
+                            75003, Paris
+                        </p>
+                        
                     </div>
                 </div>
                 {/* payment section - Review Items */}

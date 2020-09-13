@@ -13,6 +13,8 @@
 
 .checkout__ad {
     width:100%;
+    cursor: pointer;
+    margin-top: -20px;
     margin-bottom: 10px;
 } 
 
@@ -21,6 +23,7 @@
 }
 
 .checkout__empty > img {
-    margin-top: 100px;
+    margin-top: 150px;
     width: 100%;
+    
 }

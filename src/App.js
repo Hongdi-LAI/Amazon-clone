@@ -13,6 +13,7 @@ import Payment from './Payment';
 import Orders from './Orders';
 import {loadStripe} from '@stripe/stripe-js';
 import {Elements} from '@stripe/react-stripe-js';
+import AmazonPrime from './AmazonPrime';
 
 // Stripe public API Key
 const promise = loadStripe('pk_test_51HQvwyD2WNwr7ngM2Kw9kxIeHpU08dsZwnFoB7NL7ombM83romJhhKlc81Es3h1d9zTAhOcXXiQD0jJMdA7xYIMP000vOsX9ys');
@@ -58,10 +59,17 @@ function App() {
             <h1>checkout</h1>
           </Route>
           */}
+
            <Route path = "/orders">
             <Header />
             <SubHeader />
             <Orders />
+            <Bottom />
+          </Route>
+          <Route path = "/amazonprime">
+            <Header />
+            <SubHeader />
+            <AmazonPrime />
             <Bottom />
           </Route>
           <Route path = "/checkout">
