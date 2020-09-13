@@ -1,7 +1,6 @@
 import React from 'react';
 import './Header.css';
 import { Link } from 'react-router-dom';
-import LocationOnIcon from '@material-ui/icons/LocationOn';
 import SearchIcon from '@material-ui/icons/Search';
 import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 import { useStateValue } from './StateProvider';
@@ -20,7 +19,6 @@ function Header() {
     console.log('This User is', user);
 
     return (
-        <div className = "nav">
             <nav className = "header">
                 
                 <Link to = "/">
@@ -67,28 +65,6 @@ function Header() {
                     </Link>
                 </div>
             </nav >
-            <div className = "nav__second">
-                <div className = "nav__secondBarLeft">
-                    <LocationOnIcon />
-                    <div className = "nav__secondBarLeftDelivery">
-                        <p>Deliver to</p>
-                        <h3>United Kingdom</h3>
-                    </div>
-                    
-                </div>
-                <div className = "nav__secondBarMid">
-                    <p>Today's Deal</p>
-                    <p>Customer Service</p>
-                    <p>Gift Cards</p>
-                    <p>Registry</p>
-                    <p>Sell</p>
-                </div>
-                <div className = "nav__secondBarRight">
-                    <h3>Amazon's Response to COVID-19</h3>
-                </div>
-            </div>
-            
-        </div>
     )
 }
 

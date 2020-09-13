@@ -8,6 +8,7 @@ import Login from './Login';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import { useStateValue } from './StateProvider';
 import {auth} from './firebase';
+import SubHeader from './SubHeader';
 
 
 function App() {
@@ -52,6 +53,7 @@ function App() {
           */}
           <Route path = "/checkout">
             <Header />
+            <SubHeader />
             <Checkout />
             <Bottom />
           </Route>
@@ -61,6 +63,7 @@ function App() {
           {/* default route */}
           <Route path = "/">
             <Header />
+            <SubHeader />
             <Home />
             <Bottom />
           </Route>
