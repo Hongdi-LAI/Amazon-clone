@@ -25,49 +25,16 @@
     margin-bottom: auto;
 }
 
-.bottom__infoLeftEnd > p {
+.bottom__infoDatail > p {
     font-size: small;
     margin-bottom: 15px;
     cursor: pointer;
 }
 
-.bottom__infoLeftEnd > h2 {
+.bottom__infoDatail > h2 {
     font-size: medium;
     margin-bottom: 10px;
     
-}
-
-.bottom__infoLeftMid > p {
-    font-size: small;
-    margin-bottom: 15px;
-    cursor: pointer;
-}
-
-.bottom__infoLeftMid > h2 {
-    font-size: medium;
-    margin-bottom: 10px;
-}
-
-.bottom__infoRightMid > p {
-    font-size: small;
-    margin-bottom: 15px;
-    cursor: pointer;
-}
-
-.bottom__infoRightMid > h2 {
-    font-size: medium;
-    margin-bottom: 10px;
-}
-
-.bottom__infoRightEnd > p {
-    font-size: small;
-    margin-bottom: 15px;
-    cursor: pointer;
-}
-
-.bottom__infoRightEnd > h2 {
-    font-size: medium;
-    margin-bottom: 10px;
 }
 
 .bottom__copyright {

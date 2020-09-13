@@ -20,14 +20,14 @@ function Bottom() {
                 Back to Top
             </button>
             <div className = "bottom__info">
-                <div className = "bottom__infoLeftEnd">
+                <div className = "bottom__infoDatail">
                     <h2>Get To Know Us</h2>
                     <p>Careers</p>
                     <p>Blog</p>
                     <p>About Amazon</p>
                     <p>Amazon Devices</p>
                 </div>
-                <div className = "bottom__infoLeftMid">
+                <div className = "bottom__infoDatail">
                     <h2>Earn Money</h2>
                     <p>Sell on Amazon</p>
                     <p>Sell under Amazon Accelerator</p>
@@ -35,7 +35,7 @@ function Bottom() {
                     <p>Promote your Product</p>
                     <p>Amazon Pay</p>
                 </div>
-                <div className = "bottom__infoRightMid">
+                <div className = "bottom__infoDatail">
                     <h2>Amazon Payment Product</h2>
                     <p>Payment Cards</p>
                     <p>Payment in Installments</p>
@@ -43,7 +43,7 @@ function Bottom() {
                     <p>Gift Certificate</p>
                     <p>Online Recharge</p>
                 </div>
-                <div className = "bottom__infoRightEnd">
+                <div className = "bottom__infoDatail">
                     <h2>Let Us Help You</h2>
                     <p>Your Orders</p>
                     <p>Shipping Rates & Policies</p>
