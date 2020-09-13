@@ -9,6 +9,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import { useStateValue } from './StateProvider';
 import {auth} from './firebase';
 import SubHeader from './SubHeader';
+import Payment from './Payment';
 
 
 function App() {
@@ -59,6 +60,10 @@ function App() {
           </Route>
           <Route path = "/login">
             <Login />
+          </Route>
+          <Route path = "/payment">
+            <Header />
+            <Payment />
           </Route>
           {/* default route */}
           <Route path = "/">
