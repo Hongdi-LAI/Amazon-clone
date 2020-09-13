@@ -71,6 +71,7 @@ function App() {
             <Elements stripe={promise}>
               <Payment />
             </Elements>
+            <Bottom />
           </Route>
           {/* default route */}
           <Route path = "/">
