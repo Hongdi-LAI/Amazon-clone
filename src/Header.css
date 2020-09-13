@@ -32,11 +32,13 @@
     padding: 10px;
     border: none;
     width: 100%;
+    outline-width: 0;
 }
 
 .header__search {
     display: flex;
     flex: 1;
+    
 }
 
 .header__nav {

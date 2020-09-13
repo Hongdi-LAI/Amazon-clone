@@ -5,7 +5,7 @@
     border-color: transparent;
     border-bottom: 1px solid rgb(112, 112, 112);
     padding: 3px;
-    
+    outline: transparent;
 }
 
 .bottom__button:hover {
