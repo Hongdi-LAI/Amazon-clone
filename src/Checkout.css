@@ -24,6 +24,7 @@
 
 .checkout__empty > img {
     margin-top: 150px;
+    margin-bottom: -100px;
     width: 100%;
     
 }
