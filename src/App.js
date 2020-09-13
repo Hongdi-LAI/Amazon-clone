@@ -45,7 +45,7 @@ function App() {
         };
   }, []);
 
-    console.log("user is this", user);
+    //console.log("user is this", user);
 
   return (
     <Router>

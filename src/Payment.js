@@ -6,7 +6,7 @@ import { Link, useHistory } from 'react-router-dom';
 import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
 import CurrencyFormat from 'react-currency-format';
 import { getBasketTotal } from './reducer';
-import axios from 'axios';
+import axios from './axios';
 
 function Payment() {
 
@@ -23,7 +23,7 @@ function Payment() {
     const [succeeded, setSucceeded] = useState(false);
     const [clientSecret, setClientSecret] = useState(true);
 
-    useEffect((basket) => {
+    useEffect(() => {
         // generate the special stripe secret which allows us to charge a customer
         // whenever basket changes, we need to get new secret (charging amount changed)
         const getClientSecret = async () => {
@@ -37,6 +37,8 @@ function Payment() {
         }
         getClientSecret();
     }, [basket])
+
+    console.log('The client secret is >>>', clientSecret);
 
     const handleSubmit = async (event) => {
         //Stripe

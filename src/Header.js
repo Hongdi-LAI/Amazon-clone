@@ -16,7 +16,7 @@ function Header() {
             auth.signOut();
         }
     }
-    console.log('This User is', user);
+    //console.log('This User is', user);
 
     return (
             <nav className = "header">
