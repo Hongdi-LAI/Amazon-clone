@@ -70,7 +70,11 @@ function Header() {
             <div className = "nav__second">
                 <div className = "nav__secondBarLeft">
                     <LocationOnIcon />
-                    <h3>United Kingdom</h3>
+                    <div className = "nav__secondBarLeftDelivery">
+                        <p>Deliver to</p>
+                        <h3>United Kingdom</h3>
+                    </div>
+                    
                 </div>
                 <div className = "nav__secondBarMid">
                     <p>Today's Deal</p>

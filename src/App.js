@@ -9,6 +9,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import { useStateValue } from './StateProvider';
 import {auth} from './firebase';
 
+
 function App() {
   
   const [{ user }, dispatch] = useStateValue();

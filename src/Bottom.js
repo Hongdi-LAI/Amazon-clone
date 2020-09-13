@@ -2,8 +2,23 @@ import React from 'react'
 import './Bottom.css'
 
 function Bottom() {
+
+    //Back to Top button functionality
+    const BackToTopBtn = document.getElementById('BackToTopBtn');
+    const topFunction = () => {
+        document.body.scrollTop = 0; //for Safari
+        document.documentElement.scrollTop = 0; //for Chrome, Firefox, IE and Opera
+    }
+
     return (
         <div className = "bottom">
+            <button 
+            className="bottom__button"
+            onClick={topFunction}
+            id="BackToTopBtn"    
+            >
+                Back to Top
+            </button>
             <div className = "bottom__info">
                 <div className = "bottom__infoLeftEnd">
                     <h2>Get To Know Us</h2>

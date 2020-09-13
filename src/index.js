@@ -6,6 +6,7 @@ import * as serviceWorker from './serviceWorker';
 import { StateProvider } from './StateProvider';
 import reducer, { initialState } from './reducer';
 
+
 // wraping the entire <App /> inside <StateProvider> (higher order component)
 // so that StateManagement could be achieved globally
 

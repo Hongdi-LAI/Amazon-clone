@@ -1,4 +1,18 @@
-.bottom__info{
+.bottom__button {
+    width: 100%;
+    background-color: rgb(81, 77, 122);
+    color: rgb(231, 230, 230);
+    border-color: transparent;
+    border-bottom: 1px solid rgb(112, 112, 112);
+}
+
+.bottom__button:hover {
+    cursor: pointer;
+    background-color: rgb(81, 77, 122);
+    opacity: 0.8;
+}
+
+.bottom__info {
     background-color: #212b38;
     display: flex;
     justify-content: space-evenly;
