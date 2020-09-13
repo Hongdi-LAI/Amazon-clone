@@ -4,6 +4,12 @@
     margin-bottom: 20px;
 }
 
+.checkoutProduct:hover {
+    transition: 100ms transform ease-in;
+    transform: scale(1.01);
+    box-shadow: 0px 18px 23px 10px rgba(0,0,0,0.1);
+}
+
 .checkoutProduct__image {
     object-fit: contain;
     width: 180px;
