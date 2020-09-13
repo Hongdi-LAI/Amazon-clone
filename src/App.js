@@ -10,6 +10,7 @@ import { useStateValue } from './StateProvider';
 import {auth} from './firebase';
 import SubHeader from './SubHeader';
 import Payment from './Payment';
+import Orders from './Orders';
 import {loadStripe} from '@stripe/stripe-js';
 import {Elements} from '@stripe/react-stripe-js';
 
@@ -57,6 +58,12 @@ function App() {
             <h1>checkout</h1>
           </Route>
           */}
+           <Route path = "/orders">
+            <Header />
+            <SubHeader />
+            <Orders />
+            <Bottom />
+          </Route>
           <Route path = "/checkout">
             <Header />
             <SubHeader />
