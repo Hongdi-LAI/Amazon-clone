@@ -15,8 +15,7 @@ function Product({id,title,image,price,rating}) {
                 title: title,
                 image: image,
                 price: price,
-                rating: rating,
-                // In ES6 ": id" can be omitted 
+                rating: rating
             }
         })
     };

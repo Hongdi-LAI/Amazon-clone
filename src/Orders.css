@@ -1,0 +1,10 @@
+.orders {
+    padding: 20px 80px;
+    position: sticky;
+}
+
+.orders > h1 {
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
