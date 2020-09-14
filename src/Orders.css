@@ -3,8 +3,36 @@
     position: sticky;
 }
 
-.orders > h1 {
+.orders__title {
     margin-bottom: 30px;
     margin-top: 15px;
+    text-align: center;
+}
+
+.orders__noSignIn > a {
+    text-decoration: none;
+}
+
+.orders__noSignIn {
+    padding: 40px;
+    margin: 50px 0;
+    margin-top: 100px;
+    border: 1.5px solid lightgray;
+    text-align: center;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: whitesmoke;
+}
+
+.orders__noOrderYet {
+    padding: 40px;
+    margin: 50px 0;
+    border: 1.5px solid lightgray;
+    background-color: whitesmoke;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 

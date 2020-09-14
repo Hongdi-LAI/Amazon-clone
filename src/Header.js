@@ -8,12 +8,15 @@ import { auth } from './firebase';
 
 function Header() {
 
-    const [{ basket, user }] = useStateValue(); 
+    const [{ basket, user }, dispatch] = useStateValue(); 
     
     //Controls login and logout
     const login = () => {
         if (user) {
             auth.signOut();
+            dispatch({
+                type: 'EMPTY_BASKET'
+            });
         }
     }
     //console.log('This User is', user);

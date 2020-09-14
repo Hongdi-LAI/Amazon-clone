@@ -4,7 +4,7 @@ import './Bottom.css'
 function Bottom() {
 
     //Back to Top button functionality
-    const BackToTopBtn = document.getElementById('BackToTopBtn');
+    //const BackToTopBtn = document.getElementById('BackToTopBtn');
     const topFunction = () => {
         document.body.scrollTop = 0; //for Safari
         document.documentElement.scrollTop = 0; //for Chrome, Firefox, IE and Opera

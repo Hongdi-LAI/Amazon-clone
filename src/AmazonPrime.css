@@ -1,26 +1,22 @@
 .amazonPrime {
-   text-align: center;
+   width: 100%;
    background-color: white;
-   z-index: -10;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   object-fit: contain;
 }
 
 .amazonPrime__text{
-    width: 1100px;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 70px;
-    padding: 10px;
+    padding: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: sticky;
     font-size: large;
-    color: rgb(143, 21, 21) !important;
-    border: 2px solid rgb(143, 21, 21);
-    /*
-    color: rgb(247, 33, 61) !important;
-    border: 2px solid red;
-    */
+    color:  rgb(187, 24, 24) !important;
+    border: 2px solid rgb(187, 24, 24);
 }
 
 .amazonPrime__Icon {
@@ -29,27 +25,23 @@
     margin-right: 20px;
 }
 
-.amazonPrime > img {
-    object-fit: contain;
-    width: 100%;
-    max-width: 1200px;
-}
-
 .amazonPrime__background {
     mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
     margin-top: -65px;
-    margin-bottom: -130px;
 }
 
+/*
 .amazonPrime__logo {
     margin-top: -50px;
     margin-bottom: -250px;
-    
 }
+*/
 
 .amazonPrime__bottomImage {
-    margin-bottom: -105px;
+    margin-top: 50px;
+    margin-bottom: -100px;
     cursor: pointer;
     opacity: 0.5;
+    width: 1200px;
     mask-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
 }

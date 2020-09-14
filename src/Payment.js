@@ -115,7 +115,6 @@ function Payment() {
                     </div>
                     <div className = "payment__items">
                         {basket.map(item => (
-
                             <CheckoutProduct 
                                 id = {item.id}
                                 title = {item.title}
@@ -152,10 +151,8 @@ function Payment() {
                                 disabled = { processing || disabled || succeeded }
                                 >
                                     <span>{processing ? <p>Processing</p>:'Buy Now'}</span>
-
                                 </button>
                             </div>
-                            
                             {/* Errors */}
                             {error && <div>{ error }</div>}
                         </form>

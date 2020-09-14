@@ -14,17 +14,25 @@
 .checkout__ad {
     width:100%;
     cursor: pointer;
-    margin-top: -20px;
     margin-bottom: 10px;
 } 
 
 .checkout__empty > h2 {
     margin-bottom: 20px;
+    font-size: xx-large;
+}
+
+.checkout__empty > p a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.checkout__empty > p {
+    font-size: large;
 }
 
 .checkout__empty > img {
     margin-top: 150px;
     margin-bottom: -100px;
     width: 100%;
-    
 }

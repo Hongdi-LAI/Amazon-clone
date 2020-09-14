@@ -36,7 +36,6 @@ function Order( {order} ) {
                 thousandSeparator = {true}
                 prefix={'$'}
                 />
-
         </div>
     )
 }

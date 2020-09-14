@@ -1,23 +1,32 @@
 import React from 'react';
 import './Product.css';
+//import {Link} from 'react-router-dom';
 import { useStateValue } from './StateProvider';
 
 function Product({id,title,image,price,rating}) {
     
-    const [ {} , dispatch] = useStateValue();
+    const [{ user}, dispatch] = useStateValue();
 
     const addToBasket = () => {
-        //add item to basket
-        dispatch({
-            type: 'ADD_TO_BASKET',
-            item: {
-                id: id,
-                title: title,
-                image: image,
-                price: price,
-                rating: rating
-            }
-        })
+        
+        if(user){
+            //add item to basket
+            dispatch({
+                type: 'ADD_TO_BASKET',
+                item: {
+                    id: id,
+                    title: title,
+                    image: image,
+                    price: price,
+                    rating: rating,
+                }
+            })
+        } else {
+            const SignInRequest = alert(`Please sign in before adding items to the cart.`)
+            dispatch({
+                type: 'EMPTY_BASKET'
+            })
+        }
     };
 
     return (
