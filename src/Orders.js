@@ -4,6 +4,7 @@ import './Orders.css'
 function Orders() {
     return (
         <div className = "orders">
+            {/* push the order into the database */}
             <h1>Your Orders</h1>            
         </div>
     )

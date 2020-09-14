@@ -7,6 +7,7 @@ import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
 import CurrencyFormat from 'react-currency-format';
 import { getBasketTotal } from './reducer';
 import axios from './axios';
+import {db} from './firebase';
 
 function Payment() {
 
@@ -38,7 +39,8 @@ function Payment() {
         getClientSecret();
     }, [basket])
 
-    console.log('The client secret is >>>', clientSecret);
+    //console.log('The client secret is >>>', clientSecret);
+    //console.log(user);
 
     const handleSubmit = async (event) => {
         //Stripe
@@ -48,11 +50,21 @@ function Payment() {
 
         const payload = await stripe.confirmCardPayment(clientSecret, {
             payment_method: {
-                card: elements.getElement(CardElement),
+                card: elements.getElement(CardElement)
             }
         }).then(({ paymentIntent }) => {
+            // users -> id -> orders
+            db
+            .collection('users')
+            .doc(user?.uid)
+            .collection('orders')
+            .doc(paymentIntent.id)
+            .set({
+                basket: basket,
+                amount: paymentIntent.amount,
+                created: paymentIntent.created
+            });
             //paymentIntent = payment confirmation
-
             //if payment succeeded, update variables and jump to link './orders'
             setSucceeded(true);
             setError(null);
