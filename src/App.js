@@ -20,6 +20,11 @@ const promise = loadStripe('pk_test_51HQvwyD2WNwr7ngM2Kw9kxIeHpU08dsZwnFoB7NL7om
 
 
 function App() {
+
+  // App Title
+  useEffect(() => {
+    document.title = "Amazon - Clone"
+  }, []);
   
   const [{ user }, dispatch] = useStateValue();
   // useEffect hook runs based on given condition

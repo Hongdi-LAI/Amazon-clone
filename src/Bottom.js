@@ -52,7 +52,7 @@ function Bottom() {
                 </div>
             </div>
             <div className = "bottom__copyright">
-                <span> © 1996-2020, Amazon.com, Inc. or its affiliates. </span>
+                <span> © 1996-2020, Amazon Clone, No rights reserved. </span>
             </div>
         </div>
 
