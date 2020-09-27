@@ -1,52 +1,51 @@
 .bottom {
-    bottom: 0;
-    margin-top: 100px;
+  bottom: 0;
+  margin-top: 100px;
 }
 
 .bottom__button {
-    width: 100%;
-    background-color: rgb(58, 55, 88);
-    color: rgb(231, 230, 230);
-    border-color: transparent;
-    border-bottom: 1px solid rgb(112, 112, 112);
-    padding: 3px;
-    outline: transparent;
+  width: 100%;
+  background-color: rgb(58, 55, 88);
+  color: rgb(231, 230, 230);
+  border-color: transparent;
+  border-bottom: 1px solid rgb(112, 112, 112);
+  padding: 3px;
+  outline: transparent;
 }
 
 .bottom__button:hover {
-    cursor: pointer;
-    background-color: rgb(58, 55, 88);
-    opacity: 0.9;
+  cursor: pointer;
+  background-color: rgb(58, 55, 88);
+  opacity: 0.9;
 }
 
 .bottom__info {
-    background-color: #212b38;
-    display: flex;
-    justify-content: space-evenly;
-    position: sticky;
-    color: lightgray;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-bottom: auto;
+  background-color: #212b38;
+  display: flex;
+  justify-content: space-evenly;
+  position: sticky;
+  color: lightgray;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: auto;
 }
 
 .bottom__infoDatail > p {
-    font-size: small;
-    margin-bottom: 15px;
-    cursor: pointer;
+  font-size: small;
+  margin-bottom: 15px;
+  cursor: pointer;
 }
 
 .bottom__infoDatail > h2 {
-    font-size: medium;
-    margin-bottom: 10px;
-    
+  font-size: medium;
+  margin-bottom: 10px;
 }
 
 .bottom__copyright {
-    border-top: 1px solid rgb(112, 112, 112);
-    background-color: #131921;
-    display: flex;
-    justify-content: center;
-    color: rgb(235, 230, 230);
-    padding: 5px;
+  border-top: 1px solid rgb(112, 112, 112);
+  background-color: #131921;
+  display: flex;
+  justify-content: center;
+  color: rgb(235, 230, 230);
+  padding: 5px;
 }

@@ -1,58 +1,58 @@
-import React, {useEffect} from 'react';
-import './App.css';
-import Header from './Header';
-import Bottom from './Bottom';
-import Home from './Home';
-import Checkout from './Checkout';
-import Login from './Login';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import { useStateValue } from './StateProvider';
-import {auth} from './firebase';
-import SubHeader from './SubHeader';
-import Payment from './Payment';
-import Orders from './Orders';
-import {loadStripe} from '@stripe/stripe-js';
-import {Elements} from '@stripe/react-stripe-js';
-import AmazonPrime from './AmazonPrime';
+import React, { useEffect } from "react";
+import "./App.css";
+import Header from "./Header";
+import Bottom from "./Bottom";
+import Home from "./Home";
+import Checkout from "./Checkout";
+import Login from "./Login";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { useStateValue } from "./StateProvider";
+import { auth } from "./firebase";
+import SubHeader from "./SubHeader";
+import Payment from "./Payment";
+import Orders from "./Orders";
+import { loadStripe } from "@stripe/stripe-js";
+import { Elements } from "@stripe/react-stripe-js";
+import AmazonPrime from "./AmazonPrime";
 
 // Stripe public API Key
-const promise = loadStripe('pk_test_51HQvwyD2WNwr7ngM2Kw9kxIeHpU08dsZwnFoB7NL7ombM83romJhhKlc81Es3h1d9zTAhOcXXiQD0jJMdA7xYIMP000vOsX9ys');
-
+const promise = loadStripe(
+  "pk_test_51HQvwyD2WNwr7ngM2Kw9kxIeHpU08dsZwnFoB7NL7ombM83romJhhKlc81Es3h1d9zTAhOcXXiQD0jJMdA7xYIMP000vOsX9ys"
+);
 
 function App() {
-
   // App Title
   useEffect(() => {
-    document.title = "Amazon - Clone"
+    document.title = "Amazon - Clone";
   }, []);
-  
+
   const [{ user }, dispatch] = useStateValue();
   // useEffect hook runs based on given condition
   useEffect(() => {
-      const unsubscribe = auth.onAuthStateChanged((user) => {
-          if(user){
-            //user is logged in
-            dispatch({
-              type: 'SET_USER',
-              user: user,
-            });
-          } else {
-            // user is logged out
-            dispatch({
-              type: 'SET_USER',
-              user: null,
-            });
-          }
+    const unsubscribe = auth.onAuthStateChanged((user) => {
+      if (user) {
+        //user is logged in
+        dispatch({
+          type: "SET_USER",
+          user: user,
         });
+      } else {
+        // user is logged out
+        dispatch({
+          type: "SET_USER",
+          user: null,
+        });
+      }
+    });
 
-        return () => {
-          // Any cleanup go in here
-          // if App re-render, it will detach and reattach with a new listener
-          unsubscribe();
-        };
+    return () => {
+      // Any cleanup go in here
+      // if App re-render, it will detach and reattach with a new listener
+      unsubscribe();
+    };
   }, []);
 
-    //console.log("user is this", user);
+  //console.log("user is this", user);
 
   return (
     <Router>
@@ -65,28 +65,28 @@ function App() {
           </Route>
           */}
 
-           <Route path = "/orders">
+          <Route path="/orders">
             <Header />
             <SubHeader />
             <Orders />
             <Bottom />
           </Route>
-          <Route path = "/amazonprime">
+          <Route path="/amazonprime">
             <Header />
             <SubHeader />
             <AmazonPrime />
             <Bottom />
           </Route>
-          <Route path = "/checkout">
+          <Route path="/checkout">
             <Header />
             <SubHeader />
             <Checkout />
             <Bottom />
           </Route>
-          <Route path = "/login">
+          <Route path="/login">
             <Login />
           </Route>
-          <Route path = "/payment">
+          <Route path="/payment">
             <Header />
             <Elements stripe={promise}>
               <Payment />
@@ -94,7 +94,7 @@ function App() {
             <Bottom />
           </Route>
           {/* default route */}
-          <Route path = "/">
+          <Route path="/">
             <Header />
             <SubHeader />
             <Home />
