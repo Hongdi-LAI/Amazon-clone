@@ -25,7 +25,7 @@
 
    |    Syntax   |                         Description                                       |
    | :---------: | :-----------------------------------------------------------------------: |  
-   | Framework   | React.js with Hooks/Function Component/Context API (State Management)     |
+   | Library   | React.js with Hooks/Function Component/Context API (State Management)     |
    | Languages   | Javascript/CSS in BEM<sup id="footnode_4">[[4]](#fn_4)</sup> /HTML        |
    | Code Editor | Visual Studio Code                                                        |
    | Hosting     | Firebase Hosting Service                                                  |
