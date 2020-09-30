@@ -3,6 +3,7 @@
 # E-commerce Service App - Design of [Amazon-Clone](https://clone-27d1c.web.app/)
  This app has no copyrights reserved, I've done it simply because I like the web design and seek to recreate it :)
 
+<img src="Amazon-Profile.png" height = "450px" width="1200px" />
 
 </br>
 
